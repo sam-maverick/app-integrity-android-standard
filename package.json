@@ -1,0 +1,34 @@
+{
+  "name": "app-integrity-android-standard",
+  "version": "1.45.0",
+  "author": "Joel Samper and Bernardo Ferreira",
+  "private": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sam-maverick/app-integrity-android-standard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sam-maverick/app-integrity-android-standard/issues"
+  },
+  "homepage": "https://github.com/sam-maverick/app-integrity-android-standard",
+  "keywords": [
+    "react-native",
+    "android",
+    "library"
+  ],
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.38.0",
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-native": "^0.70.6",
+    "expo-module-scripts": "^3.0.4",
+    "expo-modules-core": "^1.1.0"
+  }
+}
