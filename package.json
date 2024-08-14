@@ -1,7 +1,8 @@
 {
   "name": "app-integrity-android-standard",
-  "version": "1.46.0",
+  "version": "1.47.0",
   "author": "Joel Samper and Bernardo Ferreira",
+  "main": "index.android.js",
   "private": false,
   "license": "MIT",
   "repository": {
