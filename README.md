@@ -5,7 +5,7 @@ The title says it all. Check [Android official documentation on Play Integrity s
 
 ## Pre-requisites
 
-You will need to use the [bare workflow](https://docs.expo.dev/archive/managed-vs-bare) of Expo, because this library uses native APIs.
+You will need to use the [bare workflow](https://docs.expo.dev/archive/managed-vs-bare) of Expo, because this library uses native Android APIs.
 
 
 
@@ -13,7 +13,15 @@ You will need to use the [bare workflow](https://docs.expo.dev/archive/managed-v
 
 We have used https://github.com/MrToph/react-native-android-library-boilerplate as a template for constructing libraries.
 
-See also https://github.com/jeffDevelops/expo-app-integrity for a library that supports classic requests of Android's Play Integrity and iOS App Attest integrity requests. Please, first read jeffDevelops intro on attestation in Android platforms, to get familiar with the topic.
+We suggest you to read [jeffDevelops](https://github.com/jeffDevelops/expo-app-integrity) intro on attestation in Android platforms, to get familiar with the topic.
+
+If you need a library to generate attestation/assertion tokens on the client side (the app running on the users' devices), for other kinds of APIs or systems, then check this out:
+Android's Play Integrity Classic requests: https://github.com/jeffDevelops/expo-app-integrity
+Apple iOS DeviceCkeck attestation and assertion tokens: https://github.com/jeffDevelops/expo-app-integrity
+
+If you need a library to check attestations/assertions from the server side, then check this out:
+iOS: [https://github.com/srinivas1729/appattest-checker-node](https://github.com/srinivas1729/appattest-checker-node)
+Android: [https://github.com/sam-maverick/server-side-app-integrity-check](https://github.com/sam-maverick/server-side-app-integrity-check)
 
 SIDE NOTE:
 Unfortunately, standard requests do not seem to be supported in Kotlin (oddly enough, the [Android official documentation](https://developer.android.com/google/play/integrity/standard) does not give code snippets for Kotlin, and we have checked empirically that the Kotlin compiler does not accept the classes required for the standard requests of the API), so we have written a separate library with Java code. We also found difficulties in adapting jeffDevelops library to merge with Java, so we ended up writing a new library.
